@@ -1,0 +1,1 @@
+Hiscores = new Meteor.Collection('hiscores');

@@ -1,0 +1,157 @@
+@media (max-width: 500px) {
+	
+	html {
+		background: url(../images/mit-campus-sm.png) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;	
+	}
+
+	header {
+		max-width: 85%;
+		min-width: 85%;
+		height: 20%;
+		margin: 2%;
+	}
+
+	h1 {
+		font-size: 1.3em;
+		padding: 0 0 2% 0;
+	}
+	
+	h2 {
+		font-size: .9em;
+	}
+
+	h3 {
+		font-size: 1em;
+		padding: 1% 0 0 0;
+	}
+	
+	#endScreen p {
+		font-size: .9em;
+	}
+	
+	.cloud{
+		display: none;
+	}
+	
+	#popup-screens {
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		min-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.screen {
+		max-width: 80%;
+		min-width: 80%;
+		margin: 6%;
+		padding: 5%;
+		background-color: rgba(0, 0, 0, 1);
+		-moz-opacity: 0.9;
+		-webkit-opacity: 0.9;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		letter-spacing: 0.08em; 
+		font-size: 1.1em;
+		line-height: 130%;
+		text-align: left;
+		color: white;
+	}
+
+		#stats {
+			position: absolute;
+			left: 0;
+			top:0;
+			margin: 0;
+			padding: 2%;
+			max-width: 98%;
+			min-width: 98%;
+			max-height: 10%;
+			font-size: .9em;
+		}
+
+		#counter, #points, #leader-board {
+			float: left;
+			max-width: 25%;
+			min-width: 25%;
+			margin: 3px;
+			border: solid 2px black;
+			padding: 2px;
+		}	
+		#leader-board {
+			float: right;
+			max-width: 35%;
+			min-width: 30%;
+		}	
+
+		#count, #score, #scoreboard {
+			color: black;
+		}
+
+	#middle {
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+	margin-bottom: 10%;
+	max-width: 90%;
+	min-width: 90%;
+	max-height: 80%;
+	min-height: 50%;
+}	
+		#theItem {
+			min-width:200%;
+			max-width:200%;			
+		}
+		
+		#bins {
+			min-width: 99%;
+			max-width: 99%;
+			margin: 10% 5% auto ;
+		}
+
+	
+	#intro ul li {
+		font-size: .8em;
+		line-height: 150%;
+	}
+	
+	#introScreen p {
+		font-size: .8em;
+	}
+	
+	#name-btn-Area {
+		margin: 7px 15%;
+	}
+	
+	#start-button, #playAgain-button, #end-button{
+		margin: 7px 34%;
+	}
+	
+	footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		max-width: 100%;
+		min-width: 95%;
+		max-height: 10%;
+		min-height: 10%;
+		padding: 2px;
+	}
+	
+		#pauseMusic-button {
+			float: left;
+		}
+			
+		#credit {
+			margin: 2% 1%;
+			font-size: .6em;
+		}
+		
+		
+		
+}
+

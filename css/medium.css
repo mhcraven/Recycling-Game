@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+
+
+	.screen {
+		max-width: 80%;
+		min-width: 75%;
+		padding:7%;
+	}
+		
+		.awesome-buts {
+			min-width: 80px;
+			margin-bottom: 5px;
+		}
+	
+	#introScreen p {
+		font-size: .9em;
+	}
+	
+}

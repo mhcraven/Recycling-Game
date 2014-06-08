@@ -1,0 +1,417 @@
+@viewport {
+width: device-width;
+height: device-height;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, b, u, i, center,
+ol, ul, li, a, fieldset, form, label, legend,
+caption, tbody, figure, figcaption, header, hgroup, 
+menu, nav, output, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+html, body {
+    overflow: hidden;
+   }
+
+html {
+	background: url("/campus.png") no-repeat 0 0  fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;	
+}
+
+.cloud {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		}
+		
+		.cloud01 {
+			background: transparent url("/cloud01.png") 0 0 no-repeat;
+			top:-50px;
+			z-index:-2;		 
+			/*animation syntax shorthand order: name duration timing-function delay iteration-count direction fill-mode*/
+			-webkit-animation: drift 60s linear infinite;
+			-moz-animation: drift 60s linear infinite;
+			-o-animation: drift 60s linear infinite;
+			animation: drift 60s linear infinite;
+		}
+				
+		.cloud02 {
+			background: transparent url("/cloud02.png") 0 0 no-repeat;
+			top:-80px;
+			z-index: -1;				 
+			-webkit-animation: drift 100s linear infinite;
+			-moz-animation: drift 100s linear infinite;
+			-o-animation: drift 100s linear infinite;
+			animation: drift 100s linear infinite;
+		}
+
+body {
+	text-align: center;
+	font-family: 'Sintony', sans-serif;
+	font-size: 1em;
+}
+
+h1 {
+	font-family: 'Gabriela', sans-serif;
+	color: #76f660;
+	font-size: 2em;
+	padding: 0 0 15px 0;
+}
+
+h2 {
+	font-family: 'Gabriela', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 500; 
+	padding: 10px 4px;
+	color: black;
+}
+
+h3 {
+	color: white;
+	font-size: 1.25em;
+	font-weight: 500;
+	padding: 1%;
+}
+
+p {
+	font-size: 1em;
+	font-weight: 400;
+	color: white;
+	margin-bottom: 5px;
+	text-align:center;
+}
+
+.visible {
+	display: inline-block;
+}
+
+.invisible {
+	display: none;
+}
+
+#stats {
+	float: left;
+	clear: both;
+	max-width: 20%;
+	min-width: 10%;
+	margin: 10% 2% 0 4%;
+	font-weight: 400;
+	color: black;
+}
+	#counter, #points, #leader-board {
+		margin: 10px;
+		padding: 10px;
+		width: 80px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		background-color: rgba(255, 255, 255, 1);
+		-moz-opacity: 0.8;
+		-webkit-opacity: 0.8;
+		letter-spacing: 0.08em;
+	}
+
+	#count, #score, #scoreboard {
+		color: black;
+	}
+	
+	.low-score {
+		background-color: red;
+	}
+	
+	.high-score {
+		background-color: #76f660;
+		color: black;
+	}
+		.large, .high-score {
+			padding: 2% 4%;
+		}
+	
+	.black-score {
+		background-color: none;
+	}
+	
+	#leader-board ol:first-child{
+		font-size: 1em;
+		color: blue;
+	}
+	
+	#leader-board ol {
+		list-style-type: none;
+		text-align: center;
+		font-size: 1em;
+		padding-bottom: 9px;
+		margin-left: 0;
+		padding-left: none;
+		color: black;
+	}
+
+#popup-screens {
+	position: absolute;
+	top: auto;
+	left: auto;
+	z-index: 1001;
+	padding: 5% 25%;
+}
+	.screen {
+		width: 320px;
+		padding: 40px;
+		background-color: rgba(0, 0, 0, 1);
+		-moz-opacity: 0.9;
+		-webkit-opacity: 0.9;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		letter-spacing: 0.08em; 
+		font-size: 1.1em;
+		line-height: 140%;
+		text-align: left;
+		margin: 6%;
+		color: white;
+	}
+		.large {
+			font-size: 2.5em;
+			line-height: 2;		
+			font-family: 'Gabriela', sans-serif;
+		}
+ 		
+ 		#intro ul {
+		    margin:0;
+		    padding-left: 30px;
+		    font-weight: normal;
+		}
+
+		#intro ul li {
+		    font-size: .9em;
+			margin: 0px;
+		    padding: 0px;
+		    margin-left: -0.5em;
+		}
+
+	.no-screen {
+		display: none;
+	}
+	
+	#saveScoreOpt{
+		text-align:center;
+		margin: 2px auto;
+	}
+		.highlight {
+			font-weight: 500;
+			color: yellow;
+		}
+		
+	#introScreen p {
+		margin-top: 2%; 
+	}
+	/* BEGIN BUTTON STYLES*/
+
+	#pauseMusic-button {
+		float: left;
+	}
+	
+	#start-button, #playAgain-button, #end-button{
+		position: relative;
+		margin: 7px 37%;
+	}
+	#name-btn-Area {
+		margin: 5% 20%;
+	}
+	#btn-Area {
+		margin: 10px auto;
+	}
+	
+		.awesome-buts {
+			text-align: center;
+			display: inline-block;
+			background-color:black;
+			min-width: 80px;
+			padding: 5px 10px 6px;
+			color: #fff;
+			text-decoration: none;
+			font-weight: 500;
+			line-height: 110%;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-box-shadow: 0 1px 3px #999;
+			-webkit-box-shadow: 0 1px 3px #999;
+			text-shadow: 0 -1px 1px #222;
+			border-bottom: 1px solid #222;
+			cursor: pointer;
+		}
+		
+		
+	/*END BUTTON STYLES*/
+		
+	#user-name{
+		width: 80px;
+	}
+
+#middle {
+	position: absolute;
+	bottom: 0px;
+	left: 70px;
+	margin-bottom: 10%;
+	max-width: 80%;
+	min-width: 80%;
+	max-height: 80%;
+	min-height: 60%;
+}	
+	#bins {
+		min-width: 350px;
+		margin: 10% 5% auto ;
+	}
+		#binR, #binT, #binC { 
+			float: left;
+			width: 33%;
+		}
+
+footer {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	max-width: 100%;
+	min-width: 95%;
+	max-height: 15%;
+	min-height: 10%;
+	padding: 5px;
+}
+	
+	#credit {
+		clear:both;
+		float: left;
+		margin-top: 25px;
+		color: black;
+		font-size: .7em;
+	}
+	
+	a {
+		text-decoration: none;
+		color: blue;
+	}
+	
+	
+
+/* animation syntax shorthand order: name duration timing-function delay iteration-count direction fill-mode */
+.shake {
+  	-webkit-animation: shake .5s both;
+  	-moz-animation: shake .5s both;
+  	animation-name: shake;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+  	animation-duration: 1s ;
+  	-webkit-animation-fill-mode: both;
+  	-moz-animation-fill-mode: both;
+  	animation-fill-mode: both;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-8px);
+    -moz-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(8px);
+    -moz-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+}
+
+	@-webkit-keyframes drift {
+		from {-webkit-transform:translateX(-255px);}		
+		to {-webkit-transform:translateX(1350px);}
+	}
+	
+	@-moz-keyframes drift {
+		from {-moz-transform:translateX(-255px);}		
+		to {-moz-transform:translateX(1350px);}
+	}
+	
+	@-o-keyframes drift {
+		from {-o-transform:translateX(-255px);}		
+		to {-o-transform:translateX(1350px);}
+	}
+	
+	@keyframes drift {
+		from {transform:translateX(-255px);}		
+		to {transform:translateX(1350px);}
+	}
+
+	#sprite-container {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		z-index: 1;
+	}
+
+		.sprite {
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+			background: url("/beaver-sprite.png") 0 0 no-repeat;
+			-webkit-animation: beaver 5s steps(20) infinite forwards;
+			-moz-animation: beaver 5s steps(20) infinite forwards;	
+			-o-animation: beaver 5s steps(20) infinite forwards;
+			animation: beaver 5s steps(20) infinite forwards;
+		}
+
+	@-webkit-keyframes beaver {
+		0% { background-position: 0 0;
+		}
+		100% {background-position: 0 -4000px;
+		}
+	}
+
+	@-moz-keyframes beaver {
+		0% { background-position: 0 0;}
+		100% {background-position: 0 -4000px;
+		}
+	}
+
+	@-o-keyframes beaver {
+		0% { background-position: 0 0;}
+		100% {background-position: 0 -4000px;
+		}
+	}
+
+	@-ms-keyframes beaver {
+		0% { background-position: 0 0;}
+		100% {background-position: 0 -4000px;}
+	}
+
+	@keyframes beaver {
+		0% { background-position: 0 0;}
+		100% {background-position: 0 -4000px;}
+	}
+
+	.shrink-it {
+		-webkit-animation: shrink 1s forwards;
+		-moz-animation: shrink 1s forwards;
+		-o-animation: shrink 1s forwards;
+		animation: shrink 1s forwards;
+	}
+
+	@-webkit-keyframes shrink {
+		from {-webkit-transform:scale(1,1);}		
+		to {-webkit-transform:scale(.9,.9);}
+	}
+}

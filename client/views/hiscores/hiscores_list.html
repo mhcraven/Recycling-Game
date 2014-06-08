@@ -1,0 +1,19 @@
+<template name="hiscoresList">
+	<div id="points">
+		<h2> Points</h2>
+		<p id="score" class="">0</p>
+	</div>
+	<div id="leader-board">
+		<h2>Top 3 Players</h2>
+		<p id="scoreboard" >
+		<div class="hiscores">
+			{{#each hiscores}}
+			{{> hiscoreItem}}
+			{{/each}}
+		</div>
+		
+		</p>
+		{{> yield}}
+	</div>
+
+</template>

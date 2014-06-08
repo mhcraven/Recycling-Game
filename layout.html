@@ -1,0 +1,23 @@
+<template name="layout">
+	<header>
+	</header>
+	<body>
+		<header>
+			<div>{{> clouds}}</div>
+		</header>
+		{{> audio}}
+		<section id="stats">
+			{{> counter}}
+			{{> hiscoresList}}		
+		</section>
+		<section id="popup-screens" class="">
+			{{> screens}}
+		</section>
+		<section id="middle">
+			{{> bins}}
+		</section>	
+		<footer>
+			{{> footer}}
+		</footer>
+	</body>
+</template>

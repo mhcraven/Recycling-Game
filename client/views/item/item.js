@@ -1,0 +1,5 @@
+Template.item.rendered = function(){
+
+	
+
+};
